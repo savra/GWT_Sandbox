@@ -1,0 +1,62 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <ui:style>
+        .bolder { font-weight:bold; padding: 20px; font-size: 30px }
+        .gridBorder {border: 1px solid; border-radius: 10px; padding: 10px}
+    </ui:style>
+    <g:HTMLPanel>
+        <g:Label styleName="{style.bolder}" text="This is my label in bold!"/>
+        <g:VerticalPanel ui:field="myPanelContent" spacing="5"/>
+        <g:FlexTable ui:field="flex"/>
+
+        <g:Grid ui:field="grid1" styleName="{style.gridBorder}">
+            <g:row>
+                <g:customCell>
+                    <g:Label styleName="{style.bolder}" text="К рез"/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="X"/>
+                </g:customCell>
+                <g:customCell>
+                    <g:Label styleName="{style.bolder}" text="К отр"/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="X"/>
+                </g:customCell>
+                <g:customCell>
+                    <g:Label styleName="{style.bolder}" text="К норм"/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="X"/>
+                </g:customCell>
+                <g:customCell>
+                    <g:Label styleName="{style.bolder}" text="Должностной оклад"/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="="/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="Премия"/>
+                </g:customCell>
+            </g:row>
+            <g:row>
+                <g:customCell>
+                    <g:Label styleName="{style.bolder}" text="1.15"/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="1.0"/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="0.37"/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="30000.00р"/>
+                </g:customCell>
+                <g:customCell >
+                    <g:Label styleName="{style.bolder}" text="12765.00р"/>
+                </g:customCell>
+            </g:row>
+        </g:Grid>
+    </g:HTMLPanel>
+</ui:UiBinder>
